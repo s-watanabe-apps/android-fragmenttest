@@ -23,10 +23,21 @@
         android:padding="3dp"
         android:background="@drawable/frame"/>
 
-    <Button
-        android:id="@+id/buttonTest"
-        android:text="TEST"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonTest"
+            android:text="TEST"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/buttonCallMainMethod"
+            android:text="MAIN"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </LinearLayout>

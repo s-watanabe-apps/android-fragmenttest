@@ -25,4 +25,10 @@ public class Main2Fragment extends Fragment {
     void buttonTest() {
         Toast.makeText(getContext(), editTest.getText().toString(), Toast.LENGTH_SHORT).show();
     }
+
+    @Click
+    void buttonCallMainMethod() {
+        MainActivity activity = (MainActivity) getActivity();
+        activity.mainMethod(getClass().getSimpleName());
+    }
 }
